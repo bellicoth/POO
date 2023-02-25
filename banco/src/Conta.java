@@ -1,13 +1,12 @@
 public class Conta{
 
     private int numero;
+    protected double saldo;
 
     public Conta(int numero, double saldo) {
         this.numero = numero;
         this.saldo = saldo;
     }
-
-    private double saldo;
     
     public double calcularSaldo(){
 

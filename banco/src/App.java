@@ -6,5 +6,8 @@ public class App {
 
         var contaCorrente = new ContaCorrente(3214, 200, 10);
         System.out.println(contaCorrente.calcularSaldo());
+        var ContaVip = new ContaVip(3214, 200, 1000);
+        System.out.println(ContaVip.calcularSaldo());
+    
     }
 }

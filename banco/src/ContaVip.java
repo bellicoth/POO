@@ -7,6 +7,10 @@ public class ContaVip extends Conta{
         this.limite = limite;
     }
 
+    public double calcularSaldo(){
+        return saldo + limite;
+    }
+
     public double getLimite() {
         return limite;
     }
