@@ -26,6 +26,11 @@ public class Jogador{
         this.xp += pontos;
     }
 
+    public boolean isEnvenenado(){
+
+        return envenenado;
+    }
+
     public void receberAntidoto(){
         envenenado = !envenenado;
     }
@@ -33,7 +38,10 @@ public class Jogador{
     public int getXp() {
         return xp;
     }
-    
+    public String getNome() {
+        return nome;
+    }
+
     public int getHp() {
         return hp;
     }
