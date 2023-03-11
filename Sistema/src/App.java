@@ -13,5 +13,15 @@ public class App {
         Presidente presidente = new Presidente(3, "Barbara", new BigDecimal(50000), new BigDecimal(10000));
 
         System.out.println(presidente);
+
+        FolhaDePagamento folhaDePagamento = new FolhaDePagamento();
+        folhaDePagamento.registrar(engenheiro);
+        folhaDePagamento.registrar(presidente);
+        folhaDePagamento.registrar(gerente);
+        System.out.println(folhaDePagamento.getTotalDaFolhaDePagamento());
+
+        folhaDePagamento.login(engenheiro);
+        folhaDePagamento.login(gerente);
+        folhaDePagamento.login(presidente);
     }
 }

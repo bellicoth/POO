@@ -1,6 +1,6 @@
 import java.math.BigDecimal;
 
-public class Presidente extends Funcionario {
+public final class Presidente extends Funcionario implements Autenticavel{
     
     private BigDecimal valorCota;
 
@@ -23,9 +23,16 @@ public class Presidente extends Funcionario {
         return valorCota;
     }
 
+
     @Override
     public String toString() {
         return "Código do Funcionário(a): " + idFuncionario + ", Nome do Funcionário(a): " + nomeFuncionario + ", Salario: " + calcularSalario() + ", Valor da Cota: " + valorCota;
       }
+
+
+    @Override
+    public void autenticar() {
+        System.out.println("Presidente Logado");
+    }
     
 }

@@ -1,6 +1,6 @@
 import java.math.BigDecimal;
 
-public class Engenheiro extends Funcionario{
+public class Engenheiro extends Funcionario implements Autenticavel{
 
     private String departamento;
     private String CREA;
@@ -44,5 +44,12 @@ public class Engenheiro extends Funcionario{
     public String toString() {
         return "Código do Funcionário(a): " + idFuncionario + ", Nome do Funcionário(a): " + nomeFuncionario + ", Salario: " + calcularSalario() + ", Departamento: " + departamento + " e CREA: " + CREA;
       }
+
+
+
+    @Override
+    public void autenticar() {
+        System.out.println("Engenheiro logado");        
+    }
     
 }
